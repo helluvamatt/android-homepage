@@ -1,7 +1,66 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="fill_parent"
-    android:layout_height="fill_parent"
-    android:orientation="vertical" >
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/home_grid"
+    style="@style/HomeGridStyle"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
 
-</LinearLayout>
+    <TableRow>
+
+        <com.schneenet.android.homepage.TileView
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/container"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#FF000099"
+            android:padding="10dp" >
+
+            <ImageView
+                android:id="@+id/icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:contentDescription="@null"
+                android:padding="20dp"
+                android:scaleType="center"
+                android:src="@drawable/ic_launcher" />
+
+            <TextView
+                android:id="@+id/unread_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/icon"
+                android:layout_alignRight="@+id/icon"
+                android:text="2"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+        </com.schneenet.android.homepage.TileView>
+
+        <com.schneenet.android.homepage.TileView
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/container2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#FF000099"
+            android:padding="10dp" >
+
+            <ImageView
+                android:id="@+id/icon2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:contentDescription="@null"
+                android:padding="20dp"
+                android:scaleType="center"
+                android:src="@drawable/ic_launcher" />
+
+            <TextView
+                android:id="@+id/unread_label3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/icon2"
+                android:layout_alignRight="@+id/icon2"
+                android:text="2"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+        </com.schneenet.android.homepage.TileView>
+    </TableRow>
+
+</TableLayout>

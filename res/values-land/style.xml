@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="HomeGridStyle">
+        <item name="android:horizontalSpacing">20dp</item>
+        <item name="android:verticalSpacing">20dp</item>
+        <item name="android:stretchMode">columnWidth</item>
+        <item name="android:numColumns">4</item>
+    </style>
+
+</resources>
